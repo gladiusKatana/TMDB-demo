@@ -7,7 +7,25 @@
 		<key>TMDB-demo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>06DA7B3627A79B7A002F3C52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>06DA7B4C27A79B81002F3C52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>06DA7B5627A79B81002F3C52</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

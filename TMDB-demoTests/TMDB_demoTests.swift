@@ -1,10 +1,3 @@
-//
-//  TMDB_demoTests.swift
-//  TMDB-demoTests
-//
-//  Created by Garth Snyder on 2022-01-30.
-//
-
 import XCTest
 @testable import TMDB_demo
 

@@ -1,10 +1,3 @@
-//
-//  TMDB_demoUITests.swift
-//  TMDB-demoUITests
-//
-//  Created by Garth Snyder on 2022-01-30.
-//
-
 import XCTest
 
 class TMDB_demoUITests: XCTestCase {
