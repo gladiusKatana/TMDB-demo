@@ -140,12 +140,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0642FE5527A7CEAD00C1E8BF /* PBXContainerItemProxy */ = {
+		0642FE7527A90A9900C1E8BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 06DA7C1727A7BCD7002F3C52 /* Pods.xcodeproj */;
+			containerPortal = 0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 05C4280976BF93DA8B36818DE2E2A5E0;
+			remoteInfo = Cosmos;
+		};
+		0642FE7727A90A9900C1E8BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3F44C782D64D7EB20B61CE3844EBFAD;
+			remoteInfo = Kingfisher;
+		};
+		0642FE7927A90A9900C1E8BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BFE67F8633D3601D885AB5EBD58AB395;
 			remoteInfo = "Pods-TMDB-demo";
+		};
+		0642FE7B27A90A9900C1E8BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 319D06AA0D1D0BA345459C039040A1ED;
+			remoteInfo = SideMenu;
 		};
 		06DA7B4E27A79B81002F3C52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -161,32 +182,12 @@
 			remoteGlobalIDString = 06DA7B3627A79B7A002F3C52;
 			remoteInfo = "TMDB-demo";
 		};
-		06DA7C1E27A7BCD7002F3C52 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06DA7C1727A7BCD7002F3C52 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 05C4280976BF93DA8B36818DE2E2A5E0;
-			remoteInfo = Cosmos;
-		};
-		06DA7C2027A7BCD7002F3C52 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06DA7C1727A7BCD7002F3C52 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C3F44C782D64D7EB20B61CE3844EBFAD;
-			remoteInfo = Kingfisher;
-		};
-		06DA7C2427A7BCD7002F3C52 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 06DA7C1727A7BCD7002F3C52 /* Pods.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 319D06AA0D1D0BA345459C039040A1ED;
-			remoteInfo = SideMenu;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0642FE5827A7CECD00C1E8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0642FE5A27A7D07D00C1E8BF /* stickFigure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickFigure.png; sourceTree = "<group>"; };
+		0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		06DA7B3727A79B7A002F3C52 /* TMDB-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA7B3A27A79B7A002F3C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06DA7B3C27A79B7A002F3C52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -238,7 +239,6 @@
 		06DA7B9C27A7BA44002F3C52 /* DecodingTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecodingTask.swift; sourceTree = "<group>"; };
 		06DA7B9D27A7BA44002F3C52 /* ActivityIndicatorContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorContainer.swift; sourceTree = "<group>"; };
 		06DA7B9E27A7BA44002F3C52 /* ErrorReceivableDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorReceivableDelegate.swift; sourceTree = "<group>"; };
-		06DA7C1727A7BCD7002F3C52 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		D0823F5C7ED3F17EBDB54133 /* Pods-TMDB-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-demo.debug.xcconfig"; path = "Target Support Files/Pods-TMDB-demo/Pods-TMDB-demo.debug.xcconfig"; sourceTree = "<group>"; };
 		E0027A0B7925A879AA85F03A /* Pods_TMDB_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F286AD7725796036A3184FEC /* Pods-TMDB-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-demo.release.xcconfig"; path = "Target Support Files/Pods-TMDB-demo/Pods-TMDB-demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -279,13 +279,24 @@
 			path = Inactive;
 			sourceTree = "<group>";
 		};
+		0642FE6F27A90A9900C1E8BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0642FE7627A90A9900C1E8BF /* Cosmos.framework */,
+				0642FE7827A90A9900C1E8BF /* Kingfisher.framework */,
+				0642FE7A27A90A9900C1E8BF /* Pods-TMDB-demo */,
+				0642FE7C27A90A9900C1E8BF /* SideMenu */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		06DA7B2E27A79B7A002F3C52 = {
 			isa = PBXGroup;
 			children = (
+				0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */,
 				06DA7B3927A79B7A002F3C52 /* TMDB-demo */,
 				06DA7B5027A79B81002F3C52 /* TMDB-demoTests */,
 				06DA7B5A27A79B81002F3C52 /* TMDB-demoUITests */,
-				06DA7C1727A7BCD7002F3C52 /* Pods.xcodeproj */,
 				06DA7B3827A79B7A002F3C52 /* Products */,
 				B77181C80C90CC5D46975F22 /* Pods */,
 				D6C83F69652AE357CFA3A685 /* Frameworks */,
@@ -436,17 +447,6 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
-		06DA7C1827A7BCD7002F3C52 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				06DA7C1F27A7BCD7002F3C52 /* Cosmos */,
-				06DA7C2127A7BCD7002F3C52 /* Kingfisher */,
-				0642FE5627A7CEAD00C1E8BF /* Pods-TMDB-demo */,
-				06DA7C2527A7BCD7002F3C52 /* SideMenu */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B77181C80C90CC5D46975F22 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -558,8 +558,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 06DA7C1827A7BCD7002F3C52 /* Products */;
-					ProjectRef = 06DA7C1727A7BCD7002F3C52 /* Pods.xcodeproj */;
+					ProductGroup = 0642FE6F27A90A9900C1E8BF /* Products */;
+					ProjectRef = 0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -572,36 +572,34 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		0642FE5627A7CEAD00C1E8BF /* Pods-TMDB-demo */ = {
+		0642FE7627A90A9900C1E8BF /* Cosmos.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cosmos.framework;
+			remoteRef = 0642FE7527A90A9900C1E8BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0642FE7827A90A9900C1E8BF /* Kingfisher.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Kingfisher.framework;
+			remoteRef = 0642FE7727A90A9900C1E8BF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0642FE7A27A90A9900C1E8BF /* Pods-TMDB-demo */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = "Pods-TMDB-demo";
 			path = Pods_TMDB_demo.framework;
-			remoteRef = 0642FE5527A7CEAD00C1E8BF /* PBXContainerItemProxy */;
+			remoteRef = 0642FE7927A90A9900C1E8BF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		06DA7C1F27A7BCD7002F3C52 /* Cosmos */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			name = Cosmos;
-			path = Cosmos.framework;
-			remoteRef = 06DA7C1E27A7BCD7002F3C52 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		06DA7C2127A7BCD7002F3C52 /* Kingfisher */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			name = Kingfisher;
-			path = Kingfisher.framework;
-			remoteRef = 06DA7C2027A7BCD7002F3C52 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		06DA7C2527A7BCD7002F3C52 /* SideMenu */ = {
+		0642FE7C27A90A9900C1E8BF /* SideMenu */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			name = SideMenu;
 			path = SideMenu.framework;
-			remoteRef = 06DA7C2427A7BCD7002F3C52 /* PBXContainerItemProxy */;
+			remoteRef = 0642FE7B27A90A9900C1E8BF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
