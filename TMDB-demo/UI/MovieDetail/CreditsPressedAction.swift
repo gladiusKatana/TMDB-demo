@@ -13,7 +13,7 @@ extension MovieDetailViewController {
         
         vc.viewModel.movie = self.viewModel.movie
         navigationController?.pushViewController(vc, animated: true)
-        
+        credsVC = vc
     }
     
 }

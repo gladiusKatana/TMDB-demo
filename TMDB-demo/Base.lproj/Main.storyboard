@@ -239,10 +239,10 @@
             </objects>
             <point key="canvasLocation" x="765.60000000000002" y="40.479760119940032"/>
         </scene>
-        <!--Cast & Crew-->
+        <!--Cast-->
         <scene sceneID="IlJ-ai-v9e">
             <objects>
-                <viewController storyboardIdentifier="CreditsViewController" title="Cast &amp; Crew" id="SLq-ec-bmh" customClass="CreditsViewController" customModule="TMDB_demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreditsViewController" title="Cast" id="SLq-ec-bmh" customClass="CreditsViewController" customModule="TMDB_demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wNH-Op-7W0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,13 +1,12 @@
 import Foundation; import UIKit
 
-protocol CreditsDataSourceDelegate: AnyObject {
-}
+protocol CreditsDataSourceDelegate: AnyObject { }
 
 class CreditsDataSource: NSObject {
+    
     var cast: [Cast] = []
     var crew: [Crew] = []
-    var navBarTitle = "Cast"
-    var firstTimeLoadingFirstCrew = false
+    
     private weak var delegate: CreditsDataSourceDelegate?
     
     init(delegate: CreditsDataSourceDelegate) {
