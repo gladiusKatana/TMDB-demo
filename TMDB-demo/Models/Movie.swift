@@ -3,7 +3,7 @@ import Foundation
 struct Movie: Decodable {               //* detail screen shows: backdrop image, title, rating, release date, overview
     
     let adult: Bool
-    let backdropPath: String?
+    let backdropPath: String
     
     //let genreIds: [Int]
     

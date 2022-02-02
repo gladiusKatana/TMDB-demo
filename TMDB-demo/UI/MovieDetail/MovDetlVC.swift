@@ -20,8 +20,7 @@ class MovieDetailViewController: UIViewController {
     }
     
     private func setupMovieDetailUI() {
-        let backdropPath = viewModel.movie.backdropPath
-        let backdropImageURL = URL(string: Constants.imageBaseURL + (backdropPath != nil ? "\(backdropPath!)" : "") )
+        let backdropImageURL = URL(string: Constants.imageBaseURL + viewModel.movie.backdropPath)
         backdropImageView.kf.setImage(with: backdropImageURL)
         titleLabel.text = viewModel.movie.title
         ratingView.settings.fillMode = .precise
