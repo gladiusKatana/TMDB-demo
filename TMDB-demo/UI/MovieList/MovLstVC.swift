@@ -14,13 +14,13 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
         setupMovieListUI()
         setupSideMenu()
         viewModel.bind(to: self)
-        updateMoviesListUIAndFetch()
+        updateMoviesListUIAndFetch(withMovieTypeString: globalMovieTypeString)
     }
     
-    private func updateMoviesListUIAndFetch() {
+    func updateMoviesListUIAndFetch(withMovieTypeString movieTypeString: String) {
         activityIndicator.startAnimating()
         tableView.isHidden = true
-        viewModel.serviceFetchMovies(withMovieTypeString: globalMovieTypeString)
+        viewModel.serviceFetchMovies(withMovieTypeString: movieTypeString)
     }
     
     @IBAction func menuPressed(_ sender: Any) {
