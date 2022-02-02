@@ -13,7 +13,7 @@ class CreditsViewController: UIViewController, CreditsDataSourceDelegate {
         super.viewDidLoad()
         
         setupCreditsUI()
-        //setupNavigationBar(withTitle: "Credits")
+        setupNavigationBar(withTitle: "Cast")
         
         viewModel.bind(to: self)
         updateCreditsUIAndFetch()

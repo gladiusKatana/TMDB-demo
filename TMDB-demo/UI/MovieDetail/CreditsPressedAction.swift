@@ -2,7 +2,6 @@ import UIKit
 
 extension MovieDetailViewController {
     
-    
     @IBAction
     func creditsPressed(_ sender: Any) {
         
@@ -14,7 +13,6 @@ extension MovieDetailViewController {
         
         vc.viewModel.movie = self.viewModel.movie
         navigationController?.pushViewController(vc, animated: true)
-        credsVC = vc
         
     }
     

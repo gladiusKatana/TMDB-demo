@@ -1,15 +1,20 @@
-import Foundation
+import UIKit
 
 extension CreditsDataSource {
     
     func updateNavigationBarTitle(_ indexPath: IndexPath) {
+        
         if indexPath.row >= cast.count + 1 { // change navigation bar title to "Cast & Crew" after 1st crew member shown
+            
             if !firstTimeLoadingFirstCrew {
                 firstTimeLoadingFirstCrew = true
-            } else {
-                if navBarTitle != "Cast & Crew" {
-                    navBarTitle = "Cast & Crew"
-                    credsVC.setupNavigationBar(withTitle: navBarTitle)
+            }
+            else {
+                let str = "Cast & Crew"
+                if navBarTitle != str {
+                    navBarTitle = str
+                    let vc = UIViewController()
+                    vc.setupNavigationBar(withTitle: navBarTitle)
                 }
             }
         }
