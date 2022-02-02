@@ -48,9 +48,6 @@
 		06DA7BBA27A7BA44002F3C52 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7C27A7BA43002F3C52 /* MenuVC.swift */; };
 		06DA7BBB27A7BA44002F3C52 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7C27A7BA43002F3C52 /* MenuVC.swift */; };
 		06DA7BBC27A7BA44002F3C52 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7C27A7BA43002F3C52 /* MenuVC.swift */; };
-		06DA7BBD27A7BA44002F3C52 /* MenuCellSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7D27A7BA43002F3C52 /* MenuCellSetup.swift */; };
-		06DA7BBE27A7BA44002F3C52 /* MenuCellSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7D27A7BA43002F3C52 /* MenuCellSetup.swift */; };
-		06DA7BBF27A7BA44002F3C52 /* MenuCellSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7D27A7BA43002F3C52 /* MenuCellSetup.swift */; };
 		06DA7BC027A7BA44002F3C52 /* MenuCellSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7E27A7BA43002F3C52 /* MenuCellSelected.swift */; };
 		06DA7BC127A7BA44002F3C52 /* MenuCellSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7E27A7BA43002F3C52 /* MenuCellSelected.swift */; };
 		06DA7BC227A7BA44002F3C52 /* MenuCellSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B7E27A7BA43002F3C52 /* MenuCellSelected.swift */; };
@@ -209,7 +206,6 @@
 		06DA7B7927A7BA43002F3C52 /* MovieListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListCell.xib; sourceTree = "<group>"; };
 		06DA7B7A27A7BA43002F3C52 /* MovieListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListCell.swift; sourceTree = "<group>"; };
 		06DA7B7C27A7BA43002F3C52 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
-		06DA7B7D27A7BA43002F3C52 /* MenuCellSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellSetup.swift; sourceTree = "<group>"; };
 		06DA7B7E27A7BA43002F3C52 /* MenuCellSelected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCellSelected.swift; sourceTree = "<group>"; };
 		06DA7B8027A7BA43002F3C52 /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
 		06DA7B8127A7BA43002F3C52 /* WebPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPreview.swift; sourceTree = "<group>"; };
@@ -318,9 +314,9 @@
 			children = (
 				0642FE5727A7CECD00C1E8BF /* Main.storyboard */,
 				06DA7B3A27A79B7A002F3C52 /* AppDelegate.swift */,
+				06DA7B9627A7BA44002F3C52 /* Util */,
 				06DA7B6F27A7BA43002F3C52 /* Models */,
 				06DA7B7527A7BA43002F3C52 /* UI */,
-				06DA7B9627A7BA44002F3C52 /* Util */,
 				0642FE5E27A8BA8D00C1E8BF /* Inactive */,
 				06DA7B4327A79B80002F3C52 /* Assets.xcassets */,
 				06DA7B4527A79B80002F3C52 /* LaunchScreen.storyboard */,
@@ -364,8 +360,8 @@
 			children = (
 				06DA7B7627A7BA43002F3C52 /* Cells */,
 				06DA7B7B27A7BA43002F3C52 /* Menu */,
-				06DA7B7F27A7BA43002F3C52 /* MovieDetail */,
 				06DA7B8527A7BA43002F3C52 /* MovieList */,
+				06DA7B7F27A7BA43002F3C52 /* MovieDetail */,
 				06DA7B8E27A7BA43002F3C52 /* Credits */,
 			);
 			path = UI;
@@ -386,7 +382,6 @@
 			isa = PBXGroup;
 			children = (
 				06DA7B7C27A7BA43002F3C52 /* MenuVC.swift */,
-				06DA7B7D27A7BA43002F3C52 /* MenuCellSetup.swift */,
 				06DA7B7E27A7BA43002F3C52 /* MenuCellSelected.swift */,
 			);
 			path = Menu;
@@ -691,7 +686,6 @@
 				06DA7BD827A7BA44002F3C52 /* DidSelectFromMenu.swift in Sources */,
 				06DA7BED27A7BA45002F3C52 /* CredsVC.swift in Sources */,
 				06DA7B3B27A79B7A002F3C52 /* AppDelegate.swift in Sources */,
-				06DA7BBD27A7BA44002F3C52 /* MenuCellSetup.swift in Sources */,
 				06DA7BC927A7BA44002F3C52 /* MovDetlVC.swift in Sources */,
 				06DA7BCF27A7BA44002F3C52 /* MovieDetailService.swift in Sources */,
 				06DA7BF927A7BA45002F3C52 /* CreditsDataSource.swift in Sources */,
@@ -752,7 +746,6 @@
 				06DA7BFA27A7BA45002F3C52 /* CreditsDataSource.swift in Sources */,
 				06DA7BDF27A7BA45002F3C52 /* MovLstVC.swift in Sources */,
 				06DA7BB227A7BA44002F3C52 /* CastAndCrewCell.swift in Sources */,
-				06DA7BBE27A7BA44002F3C52 /* MenuCellSetup.swift in Sources */,
 				06DA7BAC27A7BA44002F3C52 /* Crew.swift in Sources */,
 				06DA7BEE27A7BA45002F3C52 /* CredsVC.swift in Sources */,
 				06DA7BFD27A7BA45002F3C52 /* CreditsViewModel.swift in Sources */,
@@ -783,7 +776,6 @@
 				06DA7BDA27A7BA44002F3C52 /* DidSelectFromMenu.swift in Sources */,
 				06DA7BEF27A7BA45002F3C52 /* CredsVC.swift in Sources */,
 				06DA7B5E27A79B81002F3C52 /* TMDB_demoUITestsLaunchTests.swift in Sources */,
-				06DA7BBF27A7BA44002F3C52 /* MenuCellSetup.swift in Sources */,
 				06DA7BCB27A7BA44002F3C52 /* MovDetlVC.swift in Sources */,
 				06DA7BD127A7BA44002F3C52 /* MovieDetailService.swift in Sources */,
 				06DA7BFB27A7BA45002F3C52 /* CreditsDataSource.swift in Sources */,
