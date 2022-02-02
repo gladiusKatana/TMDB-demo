@@ -9,20 +9,22 @@ extension MovieListViewController: MenuViewControllerDelegate {
 //        }
 //        updateMoviesListUIAndFetch()
         
-        globalMovieTypeString = movieTypeString
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-        guard let vc = storyboard.instantiateViewController(withIdentifier: "MovieListViewController") as? MovieListViewController else {
-            return
-        }
-        
-        navigationController?.pushViewController(vc, animated: true)
-        
-        switch movieTypeString {
-        case "now_playing": vc.setupNavigationBar(withTitle: "Now Playing Movies")
-        case "top_rated": vc.setupNavigationBar(withTitle: "Top Rated Movies")
-        default: break
+        if globalMovieTypeString != movieTypeString {
+            globalMovieTypeString = movieTypeString
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            guard let vc = storyboard.instantiateViewController(withIdentifier: "MovieListViewController") as? MovieListViewController else {
+                return
+            }
+            
+            navigationController?.pushViewController(vc, animated: true)
+            
+            switch movieTypeString {
+            case "now_playing": vc.setupNavigationBar(withTitle: "Now Playing Movies")
+            case "top_rated": vc.setupNavigationBar(withTitle: "Top Rated Movies")
+            default: break
+            }
         }
     }
     
