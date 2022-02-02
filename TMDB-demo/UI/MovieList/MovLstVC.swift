@@ -5,9 +5,9 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    /*private*/ lazy var dataSource = MovieListDataSource(delegate: self)
-    /*private*/ let viewModel = MovieListViewModel()
-    /*private*/ let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+    private let viewModel = MovieListViewModel()
+    lazy var dataSource = MovieListDataSource(delegate: self)
+    let storyBoard = UIStoryboard(name: "Main", bundle: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +17,7 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
         updateMoviesListUIAndFetch()
     }
     
-    /*private*/ func updateMoviesListUIAndFetch() {
+    private func updateMoviesListUIAndFetch() {
         activityIndicator.startAnimating()
         tableView.isHidden = true
         viewModel.serviceFetchMovies(withMovieTypeString: globalMovieTypeString)

@@ -20,7 +20,7 @@ class CreditsViewController: UIViewController, CreditsDataSourceDelegate {
     }
     
     private func updateCreditsUIAndFetch() {
-        //activityIndicator.startAnimating()    // if have time, add an activity indicator for nicer UX if delays
+        //activityIndicator.startAnimating()    //** for nicer UX if delays
         creditsTableView.isHidden = true
         viewModel.serviceFetchCredits()
     }

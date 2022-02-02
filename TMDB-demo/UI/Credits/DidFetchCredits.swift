@@ -3,7 +3,7 @@ import Foundation
 extension CreditsViewController: CreditsViewModelDelegate {
     
     func didFetchCredits(_ cast: [Cast], crew: [Crew]) {                            print("\nSTARRING\n")
-        //activityIndicator.stopAnimating()
+        //activityIndicator.stopAnimating()    //** for nicer UX if delays
         dataSource.cast = cast
         dataSource.crew = crew
         creditsTableView.isHidden = false

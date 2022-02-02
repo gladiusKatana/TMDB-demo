@@ -1,7 +1,6 @@
 import Foundation; import UIKit
 
-protocol CreditsDataSourceDelegate: AnyObject { /// didSelect...(:) method not implemented (for now) - only a print(:) called when credits-cell tapped
-                                                //func didSelectCredit(_ cast: Cast, crew: Crew)
+protocol CreditsDataSourceDelegate: AnyObject {
 }
 
 class CreditsDataSource: NSObject {
@@ -43,8 +42,7 @@ extension CreditsDataSource: UITableViewDataSource {
 extension CreditsDataSource: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView,
-                   didSelectRowAt indexPath: IndexPath) {
-        print("selected credits row \(indexPath.row)")
+                   didSelectRowAt indexPath: IndexPath) {   print("selected credits row \(indexPath.row)")
     }
 }
 

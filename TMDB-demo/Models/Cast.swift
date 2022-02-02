@@ -14,7 +14,7 @@ struct Cast: Decodable {
     //let originalName: String
     //let popularity: Double
     
-    let profilePath: String?    /// optional - profile picture sometimes missing for cast member (*make all properties optional?)
+    let profilePath: String?    /// optional - profile picture sometimes missing for cast member
     
     let castId: Int
     let character: String

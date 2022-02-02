@@ -2,7 +2,7 @@ import Foundation
 
 struct MoviesResponseObject: Decodable {
     let results: [Movie]
-    //let dates: [Date] // not yet implemented
+    //let dates: [Date] // not (yet) implemented
 }
 
 

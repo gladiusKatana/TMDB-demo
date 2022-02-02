@@ -2,7 +2,7 @@ import Foundation; import UIKit; import SideMenu
 
 extension MovieListViewController {
     
-    /*private*/ func setupMovieListUI() {
+    func setupMovieListUI() {
         
         switch globalMovieTypeString {
         case "top_rated" : title = "Top Rated Movies"
@@ -15,7 +15,7 @@ extension MovieListViewController {
         tableView.delegate = dataSource
     }
     
-    /*private*/ func setupSideMenu() {
+    func setupSideMenu() {
         guard let vc = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else {
             return
         }

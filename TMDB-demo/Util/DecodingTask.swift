@@ -2,7 +2,7 @@ import Foundation; import UIKit
 
 extension APIClient {
     
-    /*private*/ func decodingTask<T: Decodable>(with request: URLRequest,
+    func decodingTask<T: Decodable>(with request: URLRequest,
                                                 decodingType: T.Type,
                                                 completionHandler completion: @escaping (Decodable?) -> Void) -> URLSessionDataTask {
         var mutableRequest = request

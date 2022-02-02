@@ -29,7 +29,7 @@ extension APIClient {
         task.resume()
     }
     
-    /*private*/ func addApiKey(to request: inout URLRequest) {
+    func addApiKey(to request: inout URLRequest) {
         guard let url = request.url,
               var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return }
         let accessKeyQueryItem = URLQueryItem(name: "api_key", value: Constants.apiKey)

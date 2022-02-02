@@ -27,8 +27,6 @@ extension MovieListViewController: MenuViewControllerDelegate {
     }
     
 //    func didSelectNowPlayingMovies() { print("selected now playing movies from menu")  /// do not need this currently as handling logic via...
-//        // TODO: Fetch the now playing movies from the movie db API and display them in the table view  /// ... var globalMovieTypeString
-//        // TODO: change the title of the view controller to "Now Playing Movies"
 //    }
     
 }
