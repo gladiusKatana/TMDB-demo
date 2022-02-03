@@ -1,10 +1,5 @@
 import Foundation
 
-// Globals
-
-
-
-
 // Constants
 
 enum Constants {

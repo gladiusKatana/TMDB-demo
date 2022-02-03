@@ -5,9 +5,6 @@ struct MoviesResponseObject: Decodable {
     //let dates: [Date] // not (yet) implemented
 }
 
-
-
-
 protocol MovieListServiceProtocol {
     func fetchMovies(withMovieTypeString: String, completion: @escaping (Result<MoviesResponseObject>) -> Void)
 }

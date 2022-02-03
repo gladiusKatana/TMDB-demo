@@ -2,16 +2,6 @@ import Foundation; import UIKit; import SideMenu
 
 extension MovieListViewController {
     
-    func setupMovieListUI() {
-        
-        title = currentMovieList.uiTitleString
-        
-        tableView.rowHeight = 200
-        tableView.register(UINib(nibName: "MovieListCell", bundle: nil), forCellReuseIdentifier: "MovieListCell")
-        tableView.dataSource = dataSource
-        tableView.delegate = dataSource
-    }
-    
     func setupSideMenu() {
         guard let vc = storyBoard.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else {
             return

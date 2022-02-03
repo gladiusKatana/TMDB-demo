@@ -48,5 +48,14 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
         present(vc, animated: true)
     }
     
+    func setupMovieListUI() {
+        title = currentMovieList.uiTitleString
+        
+        tableView.rowHeight = 200
+        tableView.register(UINib(nibName: "MovieListCell", bundle: nil), forCellReuseIdentifier: "MovieListCell")
+        tableView.dataSource = dataSource
+        tableView.delegate = dataSource
+    }
+    
 }
 
