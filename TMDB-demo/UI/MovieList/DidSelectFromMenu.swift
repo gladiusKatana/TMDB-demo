@@ -16,7 +16,7 @@ extension MovieListViewController: MenuViewControllerDelegate {
                 MovieListViewController(coder: coder, currentMovieList: movieList)
             })
             
-            //example code from: https://cocoacasts.com/initializer-injection-with-view-controllers-and-storyboards
+            //see below for example code similar to above, from: https://cocoacasts.com/initializer-injection-with-view-controllers-and-storyboards
             
             /*
              let imageViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(identifier: "ImageViewController", creator: { coder -> ImageViewController? in

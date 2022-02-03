@@ -26,7 +26,7 @@ extension MovieListService: MovieListServiceProtocol {
             completion(.failure)
             return
         }
-        let request = URLRequest(url: url); print("\nfetching movies from url:\n\(url)")
+        let request = URLRequest(url: url)  //; print("\nfetching movies from url:\n\(url)")
         fetch(with: request, decode: { $0 as? MoviesResponseObject ?? nil }, completion: completion)
     }
 }
