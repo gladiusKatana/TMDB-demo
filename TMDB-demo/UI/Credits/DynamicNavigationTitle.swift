@@ -1,25 +1,28 @@
 import UIKit
 
-var credsVC = CreditsViewController() /// storyboard-instantiated credits-view controller instance, for calling setupNavigationBar(:), ie updating it
-
 extension CreditsDataSource {
     
     func updateNavigationBarTitle(_ indexPath: IndexPath) {
         
+        let credsVC = delegatedViewController /// storyboard-instantiated credits-view controller that owns this data source instance
+        
+        var str = ""
+        
         if indexPath.row >= cast.count + 1 { // change navigation bar title to "Cast & Crew" after 1st crew member shown
             
-            //print("\n\n CAST+CREW index path row \(indexPath.row)\n\n")
+                //print("\n\n CAST+CREW index path row \(indexPath.row)\n\n")
             
-            let str = "Cast & Crew"
-            
-            credsVC.setupNavigationBar(withTitle: str)
+            str = "Cast & Crew"
             
         } else {
             
-            //print("\n\nCAST index path row \(indexPath.row)\n\n")
+                //print("\n\nCAST index path row \(indexPath.row)\n\n")
             
-            credsVC.setupNavigationBar(withTitle: "Cast")
+            str = "Cast"
+            
         }
+        
+        credsVC?.setupNavigationBar(withTitle: str)
     }
     
 }

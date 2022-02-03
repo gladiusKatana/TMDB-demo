@@ -3,8 +3,9 @@ import Foundation; import UIKit
 class CreditsViewController: UIViewController, CreditsDataSourceDelegate {
     
     @IBOutlet weak var creditsTableView: UITableView!
+
+    lazy var dataSource = CreditsDataSource(delegate: self, delegatedViewController: CreditsViewController())
     
-    lazy var dataSource = CreditsDataSource(delegate: self)
     let viewModel = CreditsViewModel()
     
     

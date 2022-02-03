@@ -9,8 +9,11 @@ class CreditsDataSource: NSObject {
     
     private weak var delegate: CreditsDataSourceDelegate?
     
-    init(delegate: CreditsDataSourceDelegate) {
+    weak var delegatedViewController : UIViewController?
+    
+    init(delegate: CreditsDataSourceDelegate, delegatedViewController: UIViewController) {
         self.delegate = delegate
+        self.delegatedViewController = delegatedViewController
     }
 }
 
