@@ -11,14 +11,14 @@ extension MenuViewController: UITableViewDelegate {
         if indexPath.row == 0 {
             
             dismiss(animated: true) { [weak self] in
-                self?.delegate?.didSelectListOfMovies(withMovieTypeString: "top_rated")
+                self?.delegate?.didSelectListOfMovies(withMovieTypeString: MovieMenuType.topRated)
             }
         }
         
         else if indexPath.row == 1 {
             
             dismiss(animated: true) { [weak self] in
-                self?.delegate?.didSelectListOfMovies(withMovieTypeString: "now_playing")
+                self?.delegate?.didSelectListOfMovies(withMovieTypeString: MovieMenuType.nowPlaying)
             }
         }
         

@@ -14,7 +14,7 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
         setupMovieListUI()
         setupSideMenu()
         viewModel.bind(to: self)
-        updateMoviesListUIAndFetch(withMovieTypeString: globalMovieTypeString)
+        updateMoviesListUIAndFetch(withMovieTypeString: globalMovieType.apiString)
     }
     
     func updateMoviesListUIAndFetch(withMovieTypeString movieTypeString: String) {

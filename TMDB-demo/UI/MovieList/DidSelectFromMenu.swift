@@ -2,10 +2,10 @@ import UIKit; import Foundation
 
 extension MovieListViewController: MenuViewControllerDelegate {
     
-    func didSelectListOfMovies(withMovieTypeString movieTypeString: String) {       print("movie type selected: \(movieTypeString)")
+    func didSelectListOfMovies(withMovieTypeString movieTypeString: MovieMenuType) {       print("movie type selected: \(movieTypeString)")
         
-        if globalMovieTypeString != movieTypeString {
-            globalMovieTypeString = movieTypeString
+        if globalMovieType != movieTypeString {
+            globalMovieType = movieTypeString
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             
@@ -15,11 +15,7 @@ extension MovieListViewController: MenuViewControllerDelegate {
             
             navigationController?.pushViewController(vc, animated: true)
             
-            switch movieTypeString {
-            case "now_playing": vc.setupNavigationBar(withTitle: "Now Playing Movies")
-            case "top_rated": vc.setupNavigationBar(withTitle: "Top Rated Movies")
-            default: break
-            }
+            vc.setupNavigationBar(withTitle: movieTypeString.uiTitleString)
         }
         
         // alternative navigation approach ... not ideal as large-font navigation bar title will not display title dynamically when switching views ...

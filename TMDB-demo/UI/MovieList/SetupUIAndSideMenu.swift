@@ -4,10 +4,7 @@ extension MovieListViewController {
     
     func setupMovieListUI() {
         
-        switch globalMovieTypeString {
-        case "top_rated" : title = "Top Rated Movies"
-        default: title = "Now Playing Movies"
-        }
+        title = globalMovieType.uiTitleString
         
         tableView.rowHeight = 200
         tableView.register(UINib(nibName: "MovieListCell", bundle: nil), forCellReuseIdentifier: "MovieListCell")
