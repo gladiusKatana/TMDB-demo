@@ -4,8 +4,8 @@ extension MovieListViewController: MenuViewControllerDelegate {
     
     func didSelectListOfMovies(withMovieTypeString movieTypeString: MovieMenuType) {       print("movie type selected: \(movieTypeString)")
         
-        if globalMovieType != movieTypeString {
-            globalMovieType = movieTypeString
+        if currentMovieList != movieTypeString {
+            currentMovieList = movieTypeString
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             

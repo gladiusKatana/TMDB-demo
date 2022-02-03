@@ -2,7 +2,7 @@ import Foundation
 
 // Globals
 
-var globalMovieType = MovieMenuType.topRated
+
 
 
 // Constants

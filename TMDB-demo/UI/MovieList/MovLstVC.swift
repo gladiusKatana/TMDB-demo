@@ -9,12 +9,14 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
     lazy var dataSource = MovieListDataSource(delegate: self)
     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
     
+    var currentMovieList = MovieMenuType.topRated
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMovieListUI()
         setupSideMenu()
         viewModel.bind(to: self)
-        updateMoviesListUIAndFetch(withMovieTypeString: globalMovieType.apiString)
+        updateMoviesListUIAndFetch(withMovieTypeString: currentMovieList.apiString)
     }
     
     func updateMoviesListUIAndFetch(withMovieTypeString movieTypeString: String) {

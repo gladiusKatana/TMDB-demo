@@ -4,7 +4,7 @@ extension MovieListViewController {
     
     func setupMovieListUI() {
         
-        title = globalMovieType.uiTitleString
+        title = currentMovieList.uiTitleString
         
         tableView.rowHeight = 200
         tableView.register(UINib(nibName: "MovieListCell", bundle: nil), forCellReuseIdentifier: "MovieListCell")
