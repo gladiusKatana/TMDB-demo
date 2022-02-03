@@ -402,9 +402,9 @@
 			isa = PBXGroup;
 			children = (
 				06DA7B8A27A7BA43002F3C52 /* MovLstVC.swift */,
+				06DA7B8827A7BA43002F3C52 /* DidSelectFromMenu.swift */,
 				06DA7B8627A7BA43002F3C52 /* MovieListViewModel.swift */,
 				06DA7B8727A7BA43002F3C52 /* DidFetchMovies.swift */,
-				06DA7B8827A7BA43002F3C52 /* DidSelectFromMenu.swift */,
 				06DA7B8927A7BA43002F3C52 /* SetupUIAndSideMenu.swift */,
 				06DA7B8B27A7BA43002F3C52 /* MovieListService.swift */,
 				06DA7B8C27A7BA43002F3C52 /* DidSelectMovie.swift */,
@@ -420,8 +420,8 @@
 				06DA7B8F27A7BA43002F3C52 /* SetupCreditsUI.swift */,
 				06DA7B9127A7BA43002F3C52 /* CreditsService.swift */,
 				06DA7B9227A7BA43002F3C52 /* DidFetchCredits.swift */,
-				06DA7B9327A7BA43002F3C52 /* DynamicNavigationTitle.swift */,
 				06DA7B9427A7BA43002F3C52 /* CreditsDataSource.swift */,
+				06DA7B9327A7BA43002F3C52 /* DynamicNavigationTitle.swift */,
 				06DA7B9527A7BA43002F3C52 /* CreditsViewModel.swift */,
 			);
 			path = Credits;
