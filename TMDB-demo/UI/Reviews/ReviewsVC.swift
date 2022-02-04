@@ -31,7 +31,7 @@ class ReviewsListViewController: UIViewController/*, ActivityIndicatorContainer*
     func updateReviewsListUIAndFetch() {
         //activityIndicator.startAnimating()
         tableView.isHidden = true
-        viewModel.serviceFetchReviews()
+        viewModel.serviceFetchReviews(usingMockData: false)
     }
 
     

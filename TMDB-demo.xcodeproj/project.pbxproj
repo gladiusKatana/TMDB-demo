@@ -11,6 +11,7 @@
 		0642FE5B27A7D07E00C1E8BF /* stickFigure.png in Resources */ = {isa = PBXBuildFile; fileRef = 0642FE5A27A7D07D00C1E8BF /* stickFigure.png */; };
 		0642FE5C27A7D07E00C1E8BF /* stickFigure.png in Resources */ = {isa = PBXBuildFile; fileRef = 0642FE5A27A7D07D00C1E8BF /* stickFigure.png */; };
 		0642FE5D27A7D07E00C1E8BF /* stickFigure.png in Resources */ = {isa = PBXBuildFile; fileRef = 0642FE5A27A7D07D00C1E8BF /* stickFigure.png */; };
+		066C263D27ADADB300D9F359 /* MockReviews.json in Resources */ = {isa = PBXBuildFile; fileRef = 066C263C27ADADB300D9F359 /* MockReviews.json */; };
 		0697E97927AC905C004CD0DE /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697E97827AC905C004CD0DE /* ReviewsVC.swift */; };
 		0697E97A27AC905C004CD0DE /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697E97827AC905C004CD0DE /* ReviewsVC.swift */; };
 		0697E97B27AC905C004CD0DE /* ReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0697E97827AC905C004CD0DE /* ReviewsVC.swift */; };
@@ -206,6 +207,7 @@
 		0642FE5827A7CECD00C1E8BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0642FE5A27A7D07D00C1E8BF /* stickFigure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickFigure.png; sourceTree = "<group>"; };
 		0642FE6E27A90A9900C1E8BF /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		066C263C27ADADB300D9F359 /* MockReviews.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockReviews.json; sourceTree = "<group>"; };
 		0697E97827AC905C004CD0DE /* ReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsVC.swift; sourceTree = "<group>"; };
 		0697E97C27AC9EB6004CD0DE /* ReviewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListViewModel.swift; sourceTree = "<group>"; };
 		0697E98127ACA862004CD0DE /* ReviewsListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListService.swift; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 				06DA7B9927A7BA44002F3C52 /* APIClient.swift */,
 				06DA7B9C27A7BA44002F3C52 /* DecodingTask.swift */,
 				06DA7B9A27A7BA44002F3C52 /* Result.swift */,
+				066C263C27ADADB300D9F359 /* MockReviews.json */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				06DA7B4427A79B80002F3C52 /* Assets.xcassets in Resources */,
 				06DA7BB427A7BA44002F3C52 /* MovieListCell.xib in Resources */,
 				06DA7BAE27A7BA44002F3C52 /* CastAndCrewCell.xib in Resources */,
+				066C263D27ADADB300D9F359 /* MockReviews.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
