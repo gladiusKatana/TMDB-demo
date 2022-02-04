@@ -16,7 +16,8 @@ extension MovieListViewController: MenuViewControllerDelegate {
                 MovieListViewController(coder: coder, currentMovieList: movieList)
             })
             
-            //see below for example code similar to above, from: https://cocoacasts.com/initializer-injection-with-view-controllers-and-storyboards
+            //MARK: initializer injection note ...
+            // see below for example code similar to above, from: https://cocoacasts.com/initializer-injection-with-view-controllers-and-storyboards
             
             /*
              let imageViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(identifier: "ImageViewController", creator: { coder -> ImageViewController? in
@@ -41,8 +42,6 @@ extension MovieListViewController: MenuViewControllerDelegate {
          */
         
     }
-    
-        //    func didSelectNowPlayingMovies() { print("selected now playing movies from menu")  /// do not need this currently as handling logic via...
-        //    }
+
 }
 

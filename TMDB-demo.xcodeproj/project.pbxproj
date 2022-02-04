@@ -33,9 +33,6 @@
 		06B5CDE427ACE49200FD6865 /* ReviewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5CDE327ACE49200FD6865 /* ReviewListCell.swift */; };
 		06B5CDE527ACE49200FD6865 /* ReviewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5CDE327ACE49200FD6865 /* ReviewListCell.swift */; };
 		06B5CDE627ACE49200FD6865 /* ReviewListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5CDE327ACE49200FD6865 /* ReviewListCell.swift */; };
-		06B5CDEC27ACF83100FD6865 /* DidSelectReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5CDEB27ACF83100FD6865 /* DidSelectReview.swift */; };
-		06B5CDED27ACF83100FD6865 /* DidSelectReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5CDEB27ACF83100FD6865 /* DidSelectReview.swift */; };
-		06B5CDEE27ACF83100FD6865 /* DidSelectReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B5CDEB27ACF83100FD6865 /* DidSelectReview.swift */; };
 		06DA7B3B27A79B7A002F3C52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B3A27A79B7A002F3C52 /* AppDelegate.swift */; };
 		06DA7B3D27A79B7A002F3C52 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06DA7B3C27A79B7A002F3C52 /* SceneDelegate.swift */; };
 		06DA7B4427A79B80002F3C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06DA7B4327A79B80002F3C52 /* Assets.xcassets */; };
@@ -215,7 +212,6 @@
 		0697E98927ACC9D7004CD0DE /* ReviewsListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListDataSource.swift; sourceTree = "<group>"; };
 		0697E98D27ACD820004CD0DE /* ReviewListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewListCell.xib; sourceTree = "<group>"; };
 		06B5CDE327ACE49200FD6865 /* ReviewListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListCell.swift; sourceTree = "<group>"; };
-		06B5CDEB27ACF83100FD6865 /* DidSelectReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidSelectReview.swift; sourceTree = "<group>"; };
 		06DA7B3727A79B7A002F3C52 /* TMDB-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06DA7B3A27A79B7A002F3C52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06DA7B3C27A79B7A002F3C52 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -335,7 +331,6 @@
 				0697E98127ACA862004CD0DE /* ReviewsListService.swift */,
 				0697E98927ACC9D7004CD0DE /* ReviewsListDataSource.swift */,
 				0697E98527ACBD0B004CD0DE /* DidFetchReviews.swift */,
-				06B5CDEB27ACF83100FD6865 /* DidSelectReview.swift */,
 			);
 			path = Reviews;
 			sourceTree = "<group>";
@@ -751,7 +746,6 @@
 				06DA7C0527A7BA45002F3C52 /* APIClient.swift in Sources */,
 				06DA7B3D27A79B7A002F3C52 /* SceneDelegate.swift in Sources */,
 				06DA7BA227A7BA44002F3C52 /* Movie.swift in Sources */,
-				06B5CDEC27ACF83100FD6865 /* DidSelectReview.swift in Sources */,
 				06DA7BF327A7BA45002F3C52 /* DidFetchCredits.swift in Sources */,
 				06DA7BFC27A7BA45002F3C52 /* CreditsViewModel.swift in Sources */,
 				06DA7BDE27A7BA44002F3C52 /* MovLstVC.swift in Sources */,
@@ -813,7 +807,6 @@
 				06DA7BDF27A7BA45002F3C52 /* MovLstVC.swift in Sources */,
 				06DA7BB227A7BA44002F3C52 /* CastAndCrewCell.swift in Sources */,
 				06DA7BAC27A7BA44002F3C52 /* Crew.swift in Sources */,
-				06B5CDED27ACF83100FD6865 /* DidSelectReview.swift in Sources */,
 				06DA7BEE27A7BA45002F3C52 /* CredsVC.swift in Sources */,
 				06DA7BFD27A7BA45002F3C52 /* CreditsViewModel.swift in Sources */,
 				06DA7BE827A7BA45002F3C52 /* MovieListDataSource.swift in Sources */,
@@ -857,7 +850,6 @@
 				06DA7BFE27A7BA45002F3C52 /* CreditsViewModel.swift in Sources */,
 				06DA7BE027A7BA45002F3C52 /* MovLstVC.swift in Sources */,
 				06DA7BD727A7BA44002F3C52 /* DidFetchMovies.swift in Sources */,
-				06B5CDEE27ACF83100FD6865 /* DidSelectReview.swift in Sources */,
 				06DA7BF227A7BA45002F3C52 /* CreditsService.swift in Sources */,
 				06DA7C0D27A7BA45002F3C52 /* SetupNavigationBar.swift in Sources */,
 				06DA7BAD27A7BA44002F3C52 /* Crew.swift in Sources */,

@@ -2,7 +2,6 @@ import Foundation; import UIKit; import SideMenu
 
 class MovieListViewController: UIViewController, ActivityIndicatorContainer {
     
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     

@@ -2,7 +2,7 @@ import Foundation; import UIKit
 
 protocol MenuViewControllerDelegate: AnyObject {
     func didSelectListOfMovies(withMovieTypeString: MovieMenuType)
-    //func didSelectNowPlayingMovies()
+    
 }
 
 class MenuViewController: UIViewController, UITableViewDataSource {

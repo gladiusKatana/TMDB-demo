@@ -15,7 +15,7 @@ class MovieDetailViewController: UIViewController {
         setupNavigationBar(withTitle: viewModel.movie.title)
         setupMovieDetailUI()
         viewModel.bind(to: self)
-        viewModel.serviceFetchGenres()
+        viewModel.serviceFetchGenresAndReviews()
         //setupWebBasedPreviewPlayer() // partial implementation, uses hardcoded movie trailer & constraints need fixing
     }
     

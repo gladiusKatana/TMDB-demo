@@ -2,7 +2,6 @@ import Foundation; import UIKit; import SideMenu
 
 class ReviewsListViewController: UIViewController/*, ActivityIndicatorContainer*/ {
     
-  
     //@IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -43,5 +42,13 @@ class ReviewsListViewController: UIViewController/*, ActivityIndicatorContainer*
         tableView.delegate = dataSource
     }
     
+}
+
+extension ReviewsListViewController: ReviewsListDataSourceDelegate {
+    
+    func didSelectReview(_ review: Review) {
+        
+        print("\n\n\nSelected review by \(review.id)\n\n\n")
+    }
 }
 

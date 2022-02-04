@@ -20,7 +20,7 @@ class MovieDetailViewModel {
         self.delegate = delegate
     }
     
-    func serviceFetchGenres() {
+    func serviceFetchGenresAndReviews() {
         service.fetchGenres(for: movie.id) { [weak self] (result) in
             switch result {
             case .success(let genresResponseObject):
