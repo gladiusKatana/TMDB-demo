@@ -2,8 +2,9 @@ import Foundation; import UIKit; import SideMenu
 
 class MovieListViewController: UIViewController, ActivityIndicatorContainer {
     
-    @IBOutlet weak var tableView: UITableView!
+    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var tableView: UITableView!
     
     private let viewModel = MovieListViewModel()
     lazy var dataSource = MovieListDataSource(delegate: self)
@@ -11,21 +12,12 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
     
     var currentMovieList = MovieMenuType.topRated
     
+    
     convenience init?(coder: NSCoder, currentMovieList: MovieMenuType) {
         self.init(coder: coder)
         self.currentMovieList = currentMovieList
     }
-    
-//    * use below 2 inits instead of the convenience init above, and see what happens!
-    
-//    convenience init?(coder: NSCoder, currentMovieList: MovieMenuType) {
-//        self.init(coder: coder)
-//        self.currentMovieList = currentMovieList
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+    //    * use below 2 inits (/**/) instead of the convenience init above, and see what happens!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,10 +27,20 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
         updateMoviesListUIAndFetch(withMovieTypeString: currentMovieList.apiString)
     }
     
+    
     func updateMoviesListUIAndFetch(withMovieTypeString movieTypeString: String) {
         activityIndicator.startAnimating()
         tableView.isHidden = true
         viewModel.serviceFetchMovies(withMovieTypeString: movieTypeString)
+    }
+    
+    
+    func setupMovieListUI() {
+        title = currentMovieList.uiTitleString
+        tableView.rowHeight = 200
+        tableView.register(UINib(nibName: "MovieListCell", bundle: nil), forCellReuseIdentifier: "MovieListCell") /// use a protocol rather than hardcoding
+        tableView.dataSource = dataSource
+        tableView.delegate = dataSource
     }
     
     @IBAction func menuPressed(_ sender: Any) {
@@ -48,14 +50,16 @@ class MovieListViewController: UIViewController, ActivityIndicatorContainer {
         present(vc, animated: true)
     }
     
-    func setupMovieListUI() {
-        title = currentMovieList.uiTitleString
-        
-        tableView.rowHeight = 200
-        tableView.register(UINib(nibName: "MovieListCell", bundle: nil), forCellReuseIdentifier: "MovieListCell")
-        tableView.dataSource = dataSource
-        tableView.delegate = dataSource
-    }
     
+    /*
+    convenience init?(coder: NSCoder, currentMovieList: MovieMenuType) {
+        self.init(coder: coder)
+        self.currentMovieList = currentMovieList
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+     */
 }
 

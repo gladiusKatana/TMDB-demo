@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="213" id="gcp-XM-8B9" customClass="ReviewListCell" customModule="TMDB_demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gcp-XM-8B9" id="LpG-gS-ZBe">
+                <rect key="frame" x="0.0" y="0.0" width="489" height="213"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZb-CC-5zU">
+                        <rect key="frame" x="10" y="10" width="469" height="193"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFA-Lg-wfs" userLabel="authorLabel">
+                                <rect key="frame" x="12" y="56" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nz5-Xs-hcf" customClass="CosmosView" customModule="Cosmos">
+                                <rect key="frame" x="12" y="12" width="120" height="20"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUN-vo-hII">
+                                <rect key="frame" x="415" y="12" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRD-mP-Z1O">
+                                <rect key="frame" x="12" y="113" width="445" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VFA-Lg-wfs" firstAttribute="top" secondItem="Nz5-Xs-hcf" secondAttribute="bottom" constant="24" id="8CU-Bn-B4e"/>
+                            <constraint firstItem="LRD-mP-Z1O" firstAttribute="leading" secondItem="NZb-CC-5zU" secondAttribute="leading" constant="12" id="Fau-Og-cLj"/>
+                            <constraint firstItem="LRD-mP-Z1O" firstAttribute="top" secondItem="VFA-Lg-wfs" secondAttribute="bottom" constant="36" id="LlN-IX-c7N" userLabel="Body Label.top = authorLabel.bottom + 36"/>
+                            <constraint firstItem="VFA-Lg-wfs" firstAttribute="leading" secondItem="NZb-CC-5zU" secondAttribute="leading" constant="12" id="aJt-To-dVm"/>
+                            <constraint firstAttribute="trailing" secondItem="LRD-mP-Z1O" secondAttribute="trailing" constant="12" id="b6Q-aM-TsX" userLabel="trailing = Body Label.trailing + 12"/>
+                            <constraint firstItem="OUN-vo-hII" firstAttribute="top" secondItem="NZb-CC-5zU" secondAttribute="top" constant="12" id="kLF-JG-H6e"/>
+                            <constraint firstItem="Nz5-Xs-hcf" firstAttribute="top" secondItem="NZb-CC-5zU" secondAttribute="top" constant="12" id="nC6-6S-D2x"/>
+                            <constraint firstAttribute="trailing" secondItem="OUN-vo-hII" secondAttribute="trailing" constant="12" id="o3F-pH-Rdv" userLabel="trailing = Year Label.trailing + 12"/>
+                            <constraint firstItem="Nz5-Xs-hcf" firstAttribute="leading" secondItem="NZb-CC-5zU" secondAttribute="leading" constant="12" id="vbb-EV-W0P" userLabel="Cosmos View.leading = leading + 12"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="NZb-CC-5zU" secondAttribute="trailing" constant="10" id="AVf-Ag-SYC"/>
+                    <constraint firstAttribute="bottom" secondItem="NZb-CC-5zU" secondAttribute="bottom" constant="10" id="K2D-Nr-zJj"/>
+                    <constraint firstItem="NZb-CC-5zU" firstAttribute="leading" secondItem="LpG-gS-ZBe" secondAttribute="leading" constant="10" id="LgV-Tv-wEq"/>
+                    <constraint firstItem="NZb-CC-5zU" firstAttribute="top" secondItem="LpG-gS-ZBe" secondAttribute="top" constant="10" id="cgp-ba-eb3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="nbH-Mn-nhs"/>
+            <connections>
+                <outlet property="authorLabel" destination="VFA-Lg-wfs" id="hmO-Ru-6vS"/>
+                <outlet property="bodyLabel" destination="LRD-mP-Z1O" id="MOo-Xc-pOG"/>
+                <outlet property="dateLabel" destination="OUN-vo-hII" id="UMh-5W-PnF"/>
+                <outlet property="mainView" destination="NZb-CC-5zU" id="UnI-NZ-O4S"/>
+                <outlet property="ratingView" destination="Nz5-Xs-hcf" id="Ugz-R3-PhQ"/>
+            </connections>
+            <point key="canvasLocation" x="-255.79710144927537" y="55.915178571428569"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="Nz5-Xs-hcf">
+            <size key="intrinsicContentSize" width="120" height="20"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -34,10 +34,10 @@ class MovieDetailViewModel {
         service.fetchReviews(for: movie.id) { [weak self] (result) in
             switch result {
             case .success(let reviewsResponseObject):
-                let reviews = reviewsResponseObject.results.map {
+                let reviewString = reviewsResponseObject.results.map {
                     "\n🎬\nReview by \($0.author)\n(last updated: \($0.updatedAt))\n\n\($0.content)"
                 }.joined(separator: ",\n")
-                self?.delegate?.didFetchReviews(reviews)
+                self?.delegate?.didFetchReviews(reviewString)
             case .failure:
                 self?.delegate?.didReceiveError("Failed to get reviews")
             }

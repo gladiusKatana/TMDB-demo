@@ -5,9 +5,12 @@ extension APIClient {
     func decodingTask<T: Decodable>(with request: URLRequest,
                                                 decodingType: T.Type,
                                                 completionHandler completion: @escaping (Decodable?) -> Void) -> URLSessionDataTask {
-        var mutableRequest = request
+        var mutableRequest = request    //; print("\n\n\nREQUEST URL: \n\(request.url)") // without API key
+        
         addApiKey(to: &mutableRequest)
+        
         let task = session.dataTask(with: mutableRequest) { data, response, _ in
+//            print("\n\n\nREQUEST URL: \n\(request.url)")  // with(out) API key ... watch out in general (though it won't show it from here)
             guard let httpResponse = response as? HTTPURLResponse else {
                 completion(nil)
                 return
