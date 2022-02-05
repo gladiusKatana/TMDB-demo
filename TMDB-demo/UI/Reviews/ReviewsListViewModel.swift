@@ -23,8 +23,7 @@ class ReviewsListViewModel {
     func serviceFetchReviews(usingMockData: Bool) {
         
         if usingMockData {
-            if let reviews = loadJson(filename: "MockReviews") {
-                print("people: \(reviews.map{ $0.author })")
+            if let reviews = loadJson(filename: "MockReviews") {    //print("people: \(reviews.map{ $0.author })")
                 self.delegate?.didFetchReviews(reviews)
             }
         }
@@ -54,7 +53,6 @@ class ReviewsListViewModel {
             }
             return nil
         }
-        
     }
 }
 
